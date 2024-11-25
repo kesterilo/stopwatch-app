@@ -11,10 +11,3 @@
 body {
   height: 100vh;
 }
-
-
-@media (min-height: 551px) {
-  body {
-    max-height: 567px;
-  }
-}
