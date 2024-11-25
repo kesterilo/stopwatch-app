@@ -197,3 +197,9 @@
     max-height: 60%;
   }
 }
+
+@media (max-height: 440px) {
+  .container {
+    max-height: 50%;
+  }
+}
