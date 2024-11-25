@@ -16,7 +16,7 @@ const TimeFormatter = ({ time, onReset }) => {
   mlsecs = time % 100
   
   if (mlsecs == 99) {
-    secs = secs + .5 /* For production this should be 'secs + 1' */
+    secs = secs + 1 /* For production this should be 'secs + 1' */
   }
   
   if (secs == 60) {
