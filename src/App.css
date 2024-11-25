@@ -21,13 +21,11 @@
   position: relative;
   background-color: rgba(128, 128, 128, 0.041);
   flex-basis: 100%;
-  z-index: 2;
-  opacity: 1;
 }
 
 .counterCard {
   width: 250px;
-  border: 5px solid hsla(257, 90%, 4%, 0.746);
+  /* border: 5px solid hsla(257, 90%, 4%, 0.746); */
   margin: 10px 0;
   padding: 10px 10px 10px 10px;
 }
@@ -156,7 +154,7 @@
 }
 
 .footer {
-  font-size: 14px;
+  font-size: 10px;
   margin: 10px 0 0px 0;
   /* padding: 5px; */
   position: absolute;
@@ -170,19 +168,24 @@
 }
 
 
-@media (max-width: 430px) {
-  
-}
-
 @media (max-width: 450px) {
   .container {
     max-height: 70%;
   }
+  .header {
+    font-size: 40px;
+  }
 }
 
 @media (max-width: 320px) {
+  .container {
+    max-height: 70%;
+  }
   .counterCard {
     border: 0;
+  }
+  .header {
+    font-size: 35px;
   }
 }
 
@@ -195,11 +198,5 @@
 @media (min-width: 1440px) {
   .container {
     max-height: 60%;
-  }
-}
-
-@media (max-height: 440px) {
-  .container {
-    max-height: 50%;
   }
 }

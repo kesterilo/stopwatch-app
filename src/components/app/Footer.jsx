@@ -9,7 +9,7 @@ const Footer = () => {
 			<SocialIcon
 				target="_blank"
 				className="footer-element"
-				style={{ width: '20px', height: '20px' }}
+				style={{ width: '14px', height: '14px' }}
 				url="https://x.com/kester_ilo"
 			/>
 			<a
