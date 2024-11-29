@@ -1,10 +1,10 @@
 import React from 'react'
 import TimeFormatter from './time-formatter/TimeFormatter'
 
-const Terminal = ({ time, onReset }) => {
+const Terminal = () => {
   return (
     <>
-      <TimeFormatter time={time} onReset={onReset} />
+      <TimeFormatter />
     </>
   )
 }

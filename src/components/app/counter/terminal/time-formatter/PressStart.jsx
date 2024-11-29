@@ -1,6 +1,6 @@
 import React from "react";
 
-function PressStart({}) {
+function PressStart() {
   return (
     <div className="terminal">
       <div className='start-span-container'>

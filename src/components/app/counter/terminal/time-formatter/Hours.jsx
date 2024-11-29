@@ -1,4 +1,5 @@
 import React from "react";
+
 export function Hours({ hours, mins, secs, mlsecs }) {
   return (
 		<div className="terminal">

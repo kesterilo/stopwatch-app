@@ -1,16 +1,22 @@
-import { useState } from 'react';
 import Header from './components/app/Header';
 import Counter from './components/app/counter/Counter';
 import Footer from './components/app/Footer';
-import Container from './components/utility/Container';
+import Container from './components/utility-components/Container';
+import { useGlobalContext } from './context'
 
 import './App.css';
 
 const App = () => {
-	const [time, setTime] = useState(0);
-	const [isPaused, setIsPaused] = useState(false);
-  const [timerId, setTimerId] = useState('');
-  const [onReset, setOnReset] = useState(false)
+	
+	const {
+		time,
+		setTime,
+		isPaused,
+		setIsPaused,
+		timerId,
+		setTimerId,
+		setOnReset,
+	} = useGlobalContext()
 
 	const incrementTime = () => {
 		setTime((prevTime) => prevTime + 1);
@@ -51,9 +57,6 @@ const App = () => {
 				reset={reset}
 				pause={pause}
 				start={start}
-				isPaused={isPaused}
-        time={time}
-        onReset={onReset}
 			/>
 			<Footer />
 		</Container>

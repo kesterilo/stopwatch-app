@@ -1,5 +1,8 @@
 import React from "react";
+
+
 export function Minutes({ mins, secs, mlsecs }) {
+	
   return (
 		<div className="terminal">
 			{mins} : {secs} . <span

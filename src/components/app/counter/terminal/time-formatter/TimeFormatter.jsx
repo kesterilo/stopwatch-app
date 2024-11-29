@@ -4,6 +4,7 @@ import { Minutes } from './Minutes';
 import { Hours } from './Hours';
 import React from 'react'
 import PressStart from './PressStart'
+import { useGlobalContext } from '../../../../../context';
 
 
 let hours = 0
@@ -11,7 +12,10 @@ let mins = 0
 let secs = 0
 let mlsecs = 0
 
-const TimeFormatter = ({ time, onReset }) => {
+
+const TimeFormatter = () => {
+  
+  const { time, onReset } = useGlobalContext()
   
   mlsecs = time % 100
   
